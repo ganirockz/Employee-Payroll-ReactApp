@@ -1,10 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import PayrollForm from './components/payroll-form/payroll-form';
 
 function App() {
   return (
-    <div className="App">
-      Hello World
+    <div>
+      <Router>
+        <Switch>
+          <Route path="/payroll" component={PayrollForm} />
+        </Switch>  
+      </Router>
     </div>
   );
 }
