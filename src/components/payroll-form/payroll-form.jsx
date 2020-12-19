@@ -104,13 +104,12 @@ const PayrollForm = (props) => {
         event.preventDefault();
         let object  = {
             name: formValue.name,
-            department: formValue.departmentValue,
+            departments: formValue.departmentValue,
             gender: formValue.gender,
             salary: formValue.salary,
             startDate: `${formValue.day} ${formValue.month} ${formValue.year}`,
-            notes: formValue.notes,
-            id: formValue.id,
-            profileUrl : formValue.profileUrl,
+            note : formValue.notes,
+            profilePic : formValue.profileUrl,
 
         }
 
