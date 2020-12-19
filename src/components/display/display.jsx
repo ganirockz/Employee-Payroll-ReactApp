@@ -12,6 +12,7 @@ import EmployeeService from '../../services/employee-service';
 const Display = (props) => {
     const employeeService = new EmployeeService();
     const update = (id) => {
+        console.log(id);
         props.history.push(`payroll/${id}`);
     };
     const remove = (id) => {

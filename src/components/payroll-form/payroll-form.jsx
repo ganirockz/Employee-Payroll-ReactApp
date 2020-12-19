@@ -1,4 +1,4 @@
-import React,{useState, useEffect} from "react";
+import React,{useState, useEffect, Component} from "react";
 import profile1 from '../../assets/profile-images/Ellipse -3.png';
 import profile2 from '../../assets/profile-images/Ellipse 1.png';
 import profile3 from '../../assets/profile-images/Ellipse -8.png';
@@ -43,7 +43,9 @@ const PayrollForm = (props) => {
     const [formValue, setForm] = useState(initialValue);
 
     const params = useParams();
+    
     useEffect(() => {
+        console.log(params);
         if(params.id){
             getDataById(params.id);
         }

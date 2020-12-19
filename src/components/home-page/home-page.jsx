@@ -48,8 +48,6 @@ class HomePage extends React.Component{
         this.setState({employeeArray: empArray});
     };
 
-    
-
     render(){
         return(
             <div className="column content">
